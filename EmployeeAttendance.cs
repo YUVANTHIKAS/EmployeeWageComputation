@@ -8,6 +8,7 @@ namespace EmployeeWageComputation
 {
     public class EmployeeWage
     {
+        const int WAGE_PER_HR = 20, FULL_DAY_HR = 8;
         public void EmployeeAttendance()
         {
             Random random = new Random();
@@ -16,6 +17,12 @@ namespace EmployeeWageComputation
                 Console.WriteLine("Employee is present");
             else
                 Console.WriteLine("Employee is Absent");
+        }
+        public void CalculateEmpWage()
+        {
+            int daiLyEmpWage = WAGE_PER_HR * FULL_DAY_HR;
+            Console.WriteLine(daiLyEmpWage);
+
         }
     }
 }
